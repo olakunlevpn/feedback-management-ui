@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/feedback-page.css">
+    <title></title>
+</head>
+<body>
+   <div class="container-fluid">
+  
+      <header class="row navbar-containers justify-content-between text-wrap  align-items-center">
+ 
+     
+        <div class="col-2 pt-1" id="logo">
+          <a class="link-secondary comp_name text-white" href="#"><img src="images/logo2.png" class="company-logo" alt="Company's Logo">    </a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block" id="search-input">
+          
+          <input class="form-control form-control-dark  me-5 w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+       
+        </div>
+        <div class="col-5 d-flex pe-3 justify-content-md-end align-items-center "  >
+          <a class="link-light search-icon  d-block d-md-none " href="#" id="search-icon" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3 icon-column" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+          </a>
+          
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class=" btn signin-link d-none d-md-block  text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Sign-in
+</button>
+<div class="dropdown image-icon icon-column">
+<a href="" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+  <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle icon-column">
+</a>
+<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+  <li><a class="dropdown-item" href="log-in.html">Sign In</a></li>
+  <li><a class="dropdown-item" href="#">Profile</a></li>
+  <li><a class="dropdown-item" href="#">Setting</a></li>
+</ul>
+</div>
+</div>
+<!-- Modal for sign up -->
+<div class="modal  fade mt-auto" id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog card-body" >
+  <div class="modal-content" >
+    <div class="modal-header">
+      <h5 class="modal-title h3" id="exampleModalLabel">Log In</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <main class="form-signin p-4   w-100 m-auto" id="sign-up-modal">
+        <form >
+           
+          <p class="fw-bold text-center mb-4">Enter your details below to continue.</p>
+      
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="signup-fullname" placeholder="Input your fullname">
+            <label for="floatingInput">  
+                <i class="bi bi-person-fill"></i> Enter your full name
+            </label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="signup-compname" placeholder="Input your company name">
+            <label >  
+                <i class="bi bi-person-fill"></i> Company name
+            </label>
+          </div>
+      
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="signup-email" placeholder="Input your email">
+            <label for="floatingInput">  
+                <i class="bi bi-person-fill"></i> Enter a valid email
+            </label>
+          </div>
+      
+
+          
+          <div class="form-floating mb-3" >
+            <input type="password" class="form-control"  id="signup-password" placeholder="Enter Your Password">
+            <label for="floatingPassword"><i class="bi bi-key-fill"></i> Enter your Password</label>
+          </div>
+
+          <div class="form-floating mb-3" >
+            <input type="password" class="form-control"  id="singup-confirmpassword" placeholder="Confirm the password">
+            <label for="floatingPassword"><i class="bi bi-key-fill"></i> Confirm password</label>
+          </div>
+
+          <div class="col-12 mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" >
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+          
+          </div>
+        </div>
+
+        <button class="w-100 btn btn-lg sign-up-btn" type="submit">Sign Up</button>
+          <p class="mt-2 mb-2 text-dark text-center p-2">Already have an account?<a id="login-link" class="signup pop-up-link p-2">login </a></p>
+        </form>
+      </main>
+
+<!-- Modal for sign up -->
+
+
+      
+<!-- Modal for Log in-->
+
+<main class="form-signin w-100 p-4 rounded m-auto" id="login-modal">
+<form>
+
+<!--  <h1 class="h2 mb-3 fw-bolder text-center ">Login </h1>-->
+  <p class="fw-bold text-center mb-5">Enter your details below to continue.</p>
+
+  <div class="form-floating  mb-3">
+    <input type="text" class="form-control" id="signin-email" placeholder="Input Your Username">
+    <label for="floatingInput">  
+        <i class="bi bi-person-fill"></i> Enter a Username or Email
+    </label>
+  </div>
+
+
+  
+  <div class="form-floating mb-3" >
+    <input type="password" class="form-control"  id="signin-password" placeholder="Enter Your Password">
+    <label for="floatingPassword"><i class="bi bi-key-fill"></i> Enter your Password</label>
+     <p class="text-end mb-3 p-3"><a id="forgot-password" class="pop-up-link">Forgot  Password?</a></p>
+  </div>
+  
+
+
+  <button class="w-100 btn btn-lg sign-up-btn" type="submit">LOGIN</button>
+  <p class="mt-2 mb-2 text-dark text-center p-2">Don't have an account?<a  id="sign-up-link" class="p-2 pop-up-link signup">sign up here </a></p>
+</form>
+</main>
+
+
+
+
+<!-- Modal for log-in-->
+
+
+
+
+
+
+
+<!-- Modal for recover password -->
+<main class="form-signin p-4 card-body  w-100 m-auto" id="recover-password">
+<form action="index.html">
+
+  <!--<h1 class="h2 mb-3 fw-bolder text-center ">Forgot Password ?</h1>-->
+  <p class="fw-bold text-center mb-5">Enter your details below to continue.</p>
+
+  <div id="email-info">
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="recovery-email" placeholder="Input Your Username">
+    <label for="floatingInput">  
+        <i class="bi bi-person-fill"></i> Enter your email
+    </label>
+  </div>
+  <button class="w-100 btn btn-lg sign-up-btn mb-2 mt-2" type="button" id="next-button">Next</button>
+  
+</div>
+
+  <div id="create-new-password">
+  <div class="form-floating mb-3" >
+    <input type="password" class="form-control"  id="recovery-password" placeholder="Enter Your Password">
+    <label for="floatingPassword"><i class="bi bi-key-fill"></i> Enter New Password</label>
+  </div>
+  
+  <div class="form-floating mb-3" >
+    <input type="password" class="form-control  id="recovery-confirmpassword" placeholder="Enter Your Password">
+    <label for="floatingPassword"><i class="bi bi-key-fill"></i> Confirm New Password</label>
+  </div>
+  <button class="w-100 btn btn-lg sign-up-btn" type="submit">Reset</button>
+  
+</div>
+</form>
+</main>
+
+<!-- Modal for recover password  -->
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+    
+   
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+      <main class="container" id="closeSearch">
+            <div class="row">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3  mb-3">
+                <small class="opacity-50 mb-2 text-nowrap"> 
+                    <a href="index.html"> Home </a> 
+                    <i class="bi bi-chevron-right"></i>  
+                SharePoint
+                </small>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group me-1 me-md-2">
+                 <a href="feedback-page.html">
+                    <button type="button" class="fw-500">
+                        <i class="bi bi-reply-fill"></i>
+                       <small class="fw-bolder">Share</small>
+                    </button>
+                  </a>
+                  </div>
+                  <div class="get-feedback">
+                 <a href="feedback-page.html">
+                   <button type="button">
+                    <i class="fa-solid fa-message-arrow-up-right"></i>
+                    <small class="fw-bolder">
+                  
+                        <i class="bi bi-chat-square-dots-fill p-2"></i> 
+                        Send Feedback</small>
+                  </button>
+                </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-0 mb-3">
+                <div class="col-12 fs-2 ">
+                    SharePoint
+                </div>
+            </div>
+           
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-9">
+
+                        <div class="row">
+                            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+                                <small class="opacity-50 text-nowrap fw-light">3,874 feedback</small>
+                                <div class="btn-toolbar mb-2 mb-md-0">
+                                  <div class="btn-group me-2">
+                                  </div>
+                                  <select name="" id="sel" class="arrangement-method">
+                                    <option value="" id="opt" ><i class="bi bi-reply-fill"></i> Most votes</option>
+                                    <option value="">Newest</option>
+                                  </select>
+                                </div>
+                              </div>
+                        </div>
+
+         <!-- Beginning of General Comment -->
+         <a href="feedback-page2.html" class="feedback-list">
+                                <div class="row feedback-list list-group mb-3">
+                                  <div class="col p-3 list-group-item d-flex align-items-start">
+                                 <button class="btn btn-light text-dark">
+                                    <i class="bi bi-arrow-up"></i><br><br>
+                                    53.2k
+                                 </button>
+                                    <div>
+                                  <div class="ms-md-5">
+                                        <p class="mb-4">    
+                                     <span class="rounded-circle initial">MM</span>
+                                      <span class="p-2"> Brianne Reinhardt. </span>
+                                      <small> 11 Month ago</small>
+              
+                                        </p>
+                                        <p class="fw-dark h4 mb-2">    
+                                         Remove "unassigned" bucket from the List's Board view
+                                            </p>
+                                        <p class="fs-10 fw-light">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minu
+                                          s, necessitatibus quos molestias laboriosam deserunt voluptas s
+                                          aepe officiis
+                                           sit dolorum eos ab voluptatibus nemo dolor. Voluptas tempore id animi repudiandae nulla!
+                                        </p>
+                                        <div class="d-grid gap-2 mb-2 d-md-block">
+                                          <button class="btn open-btn o-links" type="button">Open</button>
+                                          <button class="btn btn-light o-links" type="button">Web</button>
+                                          <button class="btn btn-light o-links" type="button">List and Libraries</button>
+                                        </div>
+                                        <div class="d-grid gap-2 d-md-block">
+                                      
+                                        <button class="btn btn-light comment-btn"  type="button">
+                                              <i class="bi bi-chat-left"></i> <small class="text-dark">82 comments</small>
+                                          </button>
+                                          <button class="btn btn-light follow-button" type="button">
+                                              <i class="bi bi-star"></i>
+                                              <small class="text-dark">Follow</small>
+                                          </button>
+                                          <button class="btn btn-light" type="button">
+                                              <i class="bi bi-share"></i>
+                                              <small class="text-dark">Share</small>
+                                          </button>
+                                          <button class="btn btn-light" type="button">
+                                              <i class="bi bi-flag"></i>
+                                              <small class="text-dark">Flags</small>
+                                          </button>
+                                        </div>
+
+
+                                        <div class="row mt-3" id="comment-area">
+                                          <div class="form-floating">
+                                            <textarea class="form-control textarea-comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea2">Comments</label>
+                                          </div>
+                                          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                                            <button class="btn btn-primary me-md-2 send-comment-btn"  type="button">Comment</button>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                      </div>
+                                    </div>               
+                                </div>
+                             
+                              </a>
+  <!-- End General Comment -->
+             
+
+
+
+            </div>
+            <div class="d-md-block col-md-3">
+                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                      <span class="fs-4">Sidebar</span>
+                    </a>
+                    <hr>
+                </div>
+               </div>
+                </div>
+                <div class="row">
+                  <nav class="col-md-9 pb-3 pt-3" aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                          <li class="">
+                              <a class="page-link btn bg-light" href="#"><i class="bi bi-chevron-left"></i> </a>
+                          </li>
+                          <li class="me-1">
+                              <a class=" btn" href="#">Prev </a>
+                           </li>
+                        <li class="me-1">
+                          <a class="page-link btn bg-primary text-white" href="#">
+                            1
+                          </a>
+                        </li>
+                        <li class="me-1 text-opacity-25">
+                          <a class="btn text-dark" href="#">
+                            2
+                          </a>
+                        </li>
+                        <li class="me-1 text-opacity-25">
+                          <a class="btn text-dark" href="#">
+                            3
+                          </a>
+                        </li>
+                        <li class="me-1 text-opacity-25">
+                          <a class="btn text-dark" href="#">
+                            4
+                          </a>
+                        </li>
+                        <li class="bg-active me text-opacity-25-1">
+                          <a class="btn text-dark" href="#">
+                            5
+                          </a>
+                        </li>
+                        <li class="me-1">
+                          <a class="text-dark btn" href="#">Next </a>
+                       </li>
+                       <li class="">
+                          <a class="page-link btn " href="#"><i class="bi bi-chevron-right"></i> </a>
+                      </li>
+                      
+                      </ul>
+                    </nav>
+              
+                  </div>
+ 
+      </main>
+
+      <footer class="row mt-auto">
+            <div class="px-3 pt-2 mb-1">
+                <div class="container d-flex flex-wrap justify-content-center">
+                  <div class="col-12 mt-2 col-lg-auto small mb-2 mb-lg-0 me-lg-auto">
+                    &copy; All Right Reserved.
+                  </div>
+          
+                  <div class="text-md-end mt-2 small">
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-primary footer-link" href="#">Learn more</a></li>
+                        <li class="ms-3"><a class="link-primary footer-link" href="#">Privacy</a></li>
+                        <li class="ms-3"><a class="link-primary footer-link" href="#">Terms of use</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+    
+    </footer>
+
+   </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/but.js"></script>
+    <script src="js/feedback-page.js"></script>
+    <script src="js/recover-password.js"></script>
+</body>
+</html>

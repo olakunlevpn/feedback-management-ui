@@ -1,0 +1,183 @@
+
+
+.navbar-containers{
+    background-color: #ff8c00;
+    height:12vh;
+}
+.comp_name{
+    text-decoration: none;
+}
+.company-logo{
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+}
+
+
+main#sign-up-modal{
+    display:none;
+}
+#recover-password{
+    display:none;
+}
+
+.welcome-area{
+    font-weight: "Segoe UI";
+    background-color: rgb(243, 249, 253);
+}
+small{
+    font-size: .875em;
+    font-weight:400;
+    line-height:20px;
+}
+.signin-link:hover{
+    background-color: #f5b025;
+    border-color:#f5b025;
+}
+
+.list-group-item{
+    border-radius:0px; 
+}
+.list-group-item:hover{
+    border:1px solid rgb(128, 121, 121);
+    border-radius:0px;
+}
+.feedback-list{
+text-decoration:none;
+}
+.arrangement-method{
+    background-color: white;
+    border:1px solid black;
+    padding:5px 5px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+.footer-link:hover{
+    text-decoration:underline;
+}
+footer{
+    background-color:#f5b025;
+}
+
+
+/*Sign up code */
+
+
+
+
+.form-signin {
+    max-width:500px;
+    padding: 15px;
+  }
+  a.pop-up-link:hover{
+    cursor:pointer;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .company-logo{
+      height:72px;
+      width:72px;
+      border-radius: 36px;
+  }
+  
+  
+  
+  i{
+      font-size:20px;
+  }
+  .sign-up-btn{
+  background-color:#ff8c00;
+      border:1px solid #ff8c00;
+  }
+  .sign-up-btn:hover{
+      background-color:#f5b025;
+      border-bottom: #f5b025;
+      }
+      div#create-new-password{
+        display:none
+    }
+
+
+      /* Sign up code */
+
+      .dropdown-menu{
+        min-width:7rem;
+    }
+
+@media screen and (max-width: 500px) {
+    button.signin-link {
+        display:none;
+    }
+    .image-icon{
+        display:inline-block;
+    }
+   
+}
+
+html, body {
+    scroll-behavior: smooth;
+  }
+  
+ 
+  @media screen and (max-width: 800px) {
+    html, body {
+    overflow-x: hidden;
+    }
+  }
+
+  @media screen and (min-width: 300px) {
+li.me-1{
+    margin:0;
+}
+}
+
+
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+
+.app-nav .nav-link {
+    display: block;
+    padding: 0.875rem 1rem;
+    color: #252930;
+    position: relative;
+    display: block;
+    padding-left: 3rem;
+    padding-left: 10px !important;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+}
+
+
+.app-nav .nav-link {
+    display: block;
+    padding: 0.875rem 1rem;
+    color: #252930;
+    position: relative;
+    display: block;
+    padding-left: 3rem;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+}

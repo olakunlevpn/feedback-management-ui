@@ -1,0 +1,187 @@
+.navbar-containers{
+    background-color: #ff8c00;
+    height:12vh;
+ 
+}
+.comp_name{
+    text-decoration: none;
+}
+.company-logo{
+    width: 50px;
+    height:50px;
+    border-radius:25px;
+}
+
+.welcome-area{
+    font-weight: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    background-color: rgb(243, 249, 253);
+}
+main#sign-up-modal{
+    display:none;
+}
+#recover-password{
+    display:none;
+}
+
+small{
+    font-size: .875em;
+    font-weight:400;
+    line-height:20px;
+}
+/*
+span.initial{
+    border:2px solid black;
+    border-radius:100%;
+    padding:5px;
+}*/
+button.open-btn{
+    background-color:#ff8c00;
+
+}
+button.open-btn:hover{
+    background-color:#f5b025;
+    border-color:#f5b025;
+}
+button.btn small{
+    font-weight: 100;
+}
+
+.signin-link:hover{
+    background-color: #f5b025;
+    border-color:#f5b025;
+   
+}
+.btn-group button{
+    background-color: white;
+    border:1px solid black;
+    padding:5px 5px;
+}
+.get-feedback button{
+    background-color:#ff8c00;
+    border:1px solid #ff8c00;
+    color:white;
+    padding:5px 5px;
+}
+.get-feedback button:hover{
+    background-color:#f5b025;
+}
+.list-group-item{
+    border-radius:0px; 
+}
+.list-group-item:hover{
+    border:1px solid rgb(128, 121, 121);
+    border-radius:0px;
+}
+.feedback-list{
+text-decoration:none;
+}
+
+
+.initial {
+    height: 45px;
+    width: 45px;
+    background-color:#ff8c00;
+    border-radius: 100%;
+    display: inline-block;
+    text-align:center;
+    line-height:45px;
+    color:white;
+  }
+.arrangement-method{
+    background-color: white;
+    border:1px solid black;
+    padding:5px 5px;
+}
+
+
+#comment-area,#second-comment-area{
+    display:none;
+}
+.footer-link {
+    text-decoration: none;
+}
+.footer-link:hover{
+    text-decoration:underline;
+}
+footer{
+    background-color:#f5b025;
+}
+
+
+/*Sign up code */
+
+
+
+
+.form-signin {
+    max-width:500px;
+    padding: 15px;
+  }
+  a.pop-up-link:hover{
+    cursor:pointer;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .company-logo{
+      height:72px;
+      width:72px;
+      border-radius: 36px;
+  }
+  
+  
+  
+  i{
+      font-size:20px;
+  }
+  .sign-up-btn{
+  background-color:#ff8c00;
+      border:1px solid #ff8c00;
+  }
+  .sign-up-btn:hover{
+      background-color:#f5b025;
+      border-bottom: #f5b025;
+      }
+      div#create-new-password{
+        display:none
+    }
+
+      /* Sign up code */
+      .dropdown-menu{
+        min-width:7rem;
+    }
+
+
+      @media screen and (max-width: 500px) {
+        button.signin-link {
+            display:none;
+        }
+        .image-icon{
+            display:inline-block;
+        }
+       
+    }
+    
+    html, body {
+        scroll-behavior: smooth;
+      }
+      
+     
+      @media screen and (max-width: 800px) {
+        html, body {
+        overflow-x: hidden;
+        }
+      }
